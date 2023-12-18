@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { TerminalIcon, CareerIcon, GamesIcon, ProjectsIcon, HomeIcon } from '$lib/icons';
+	import { ToggleTheme } from '$lib/components';
 
 	let prevY: number;
 	let scrollY: number;
@@ -19,7 +20,7 @@
 
 <div class="sticky left-0 right-0 top-[93%] mx-5 flex justify-center">
 	<div
-		class="flex w-full items-baseline justify-around gap-8 rounded-lg border border-gray-300 bg-gray-200 p-2 transition-opacity ease-in md:w-2/3 xl:w-1/3"
+		class="flex w-full items-baseline justify-around gap-8 rounded-lg border border-gray-300 bg-gray-200 p-2 transition-opacity ease-in dark:bg-gray-800 md:w-2/3"
 		class:motion-safe:opacity-0={!opacity}
 		bind:clientHeight={height}
 	>
@@ -43,5 +44,6 @@
 			><GamesIcon />
 			<p class="hidden md:block">Games</p></a
 		>
+		<ToggleTheme />
 	</div>
 </div>
