@@ -6,3 +6,31 @@ body {
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     @apply bg-white dark:bg-black text-black dark:text-white text-center;
 }
+
+@layer {
+  @font-face {
+    font-family: 'AnonymousPro';
+    src: url('/fonts/AnonymousPro-Bold.ttf');
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: 'AnonymousPro';
+    src: url('/fonts/AnonymousPro-BoldItalic.ttf');
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'AnonymousPro';
+    src: url('/fonts/AnonymousPro-Italic.ttf');
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'AnonymousPro';
+    src: url('/fonts/AnonymousPro-Regular.ttf');
+    font-weight: normal;
+  }
+
+}
