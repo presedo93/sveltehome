@@ -15,11 +15,13 @@
 	onMount(typewriter);
 </script>
 
-<div class="my-24 justify-center md:my-48">
+<div class="my-20 justify-center md:my-40">
 	<p
 		class="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-5xl font-black text-transparent md:text-9xl"
 	>
 		{writer}
 	</p>
-	<p class="mt-4 font-semibold dark:text-gray-400 md:text-2xl">Welcome to my portfolio website!</p>
+	<p class="mt-4 font-bold text-gray-700 dark:text-gray-400 md:text-2xl">
+		Welcome to my portfolio website!
+	</p>
 </div>

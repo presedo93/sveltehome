@@ -13,7 +13,7 @@
 		return dir;
 	};
 
-	$: opacity = !scrollY || deriveDir(scrollY) === 'down';
+	$: opacity = !scrollY || deriveDir(scrollY) === 'up';
 </script>
 
 <svelte:window bind:scrollY />
