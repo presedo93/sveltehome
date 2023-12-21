@@ -1,5 +1,6 @@
 import NavBar from "./nav-bar.svelte";
 import HelloWorld from "./hello-world.svelte";
 import ToggleTheme from "./toggle-theme.svelte";
+import MineSweeper from "./minesweeper.svelte";
 
-export { NavBar, HelloWorld, ToggleTheme }
+export { NavBar, HelloWorld, ToggleTheme, MineSweeper }

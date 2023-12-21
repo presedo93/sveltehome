@@ -4,7 +4,7 @@
 
 <div class="flex w-full flex-col">
 	<HelloWorld />
-	<div class="mx-6 rounded p-4 md:px-12">
+	<div class="mx-4 rounded p-4 md:px-12">
 		<p class="mb-8 text-start">
 			Hi! I'm <strong>Rene Presedo!</strong> And this is the place where you can know about me, so make
 			yourself at home!
