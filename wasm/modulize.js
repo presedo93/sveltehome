@@ -10,5 +10,5 @@ const modulizeWasm = (name) => {
 
 }
 
-const directories = [ "./wasm/minesweeper/pkg/", "./wasm/snake/pkg/" ]; // change this to match your Rust library's name
+const directories = [ "./wasm/minesweeper/pkg/", "./wasm/snake/pkg/" ];
 directories.forEach(n => modulizeWasm(n))

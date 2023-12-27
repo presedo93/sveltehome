@@ -3,5 +3,5 @@ import { defineConfig } from 'vite';
 import wasmPack from 'vite-plugin-wasm-pack';
 
 export default defineConfig({
-	plugins: [sveltekit(), wasmPack('./wasm/minesweeper')]
+	plugins: [sveltekit(), wasmPack(['./wasm/minesweeper', './wasm/snake'])]
 });

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { MineSweeper } from '$lib/components';
+	import { MineSweeper, Snake } from '$lib/components';
 
 	let mine;
 </script>
@@ -31,6 +31,9 @@
 			wasm_bindgen crate. Each time the component that contais the board, is mounted, it
 			instantiates the wasm module.
 		</p>
+	</div>
+	<div class="mt-8">
+		<Snake />
 	</div>
 	<div class="h-12" />
 </div>
