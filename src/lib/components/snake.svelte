@@ -1,28 +1,27 @@
 <script lang="ts">
-	import init, { launch, reset } from 'snake';
+	import init, { startSnake, resetSnake, renderBoard } from 'snake';
 	import { onMount } from 'svelte';
 
 	let launched = false;
 
-	onMount(() => {
-		init();
+	onMount(async () => {
+		await init();
+		renderBoard();
 	});
 
-	const launchGame = () => {
-		launch();
-		launched = true;
-	};
-
-	const resetGame = () => {
-		reset();
+	const handleButton = () => {
+		if (launched) {
+			resetSnake();
+		} else {
+			startSnake();
+			launched = true;
+		}
 	};
 </script>
 
 <div class="flex flex-col items-center">
 	<div id="root" class="rounded-md bg-gray-100 p-2 dark:bg-gray-900" />
-	{#if launched}
-		<button class="mt-2 rounded-md bg-red-800 px-3 text-white" on:click={resetGame}>Reset</button>
-	{:else}
-		<button class="mt-2 rounded-md bg-red-800 px-3 text-white" on:click={launchGame}>Launch</button>
-	{/if}
+	<button class="mt-4 rounded-md bg-red-400 px-3" on:click={handleButton}
+		>{launched ? 'Reset the game' : 'Start the game'}</button
+	>
 </div>

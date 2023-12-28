@@ -3,7 +3,7 @@
 	import { NavBar } from '$lib/components';
 </script>
 
-<div class="min-h-screen">
+<div class="m-auto min-h-screen max-w-screen-xl">
 	<NavBar />
-	<slot />
+	<div class="flex justify-center"><slot /></div>
 </div>

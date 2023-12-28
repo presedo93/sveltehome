@@ -36,7 +36,9 @@
 </script>
 
 {#if board.length}
-	<div class="grid-rows-10 inline-grid grid-cols-10 rounded-md bg-gray-100 p-2 dark:bg-gray-900">
+	<div
+		class="grid-rows-10 inline-grid h-[260px] w-[260px] grid-cols-10 rounded-md bg-gray-100 p-2 dark:bg-gray-900"
+	>
 		{#each board as row, r}
 			{#each row as cell, c}
 				<button
