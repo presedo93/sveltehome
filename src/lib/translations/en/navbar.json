@@ -1,0 +1,11 @@
+{
+	"tech": "Tech stack",
+	"career": "Career",
+	"projects": "Projects",
+	"games": "Games",
+	"config": {
+		"theme": "Toggle theme",
+		"en": "English",
+		"es": "Spanish"
+	}
+}

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { t } from '$lib/translations';
 	import { onMount } from 'svelte';
 
 	let message: string = 'Hello, World!';
@@ -22,6 +23,6 @@
 		{writer}
 	</p>
 	<p class="mt-4 font-bold text-gray-700 dark:text-gray-400 md:text-2xl">
-		Welcome to my portfolio website!
+		{$t('home.subtitle')}
 	</p>
 </div>

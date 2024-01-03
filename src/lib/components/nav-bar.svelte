@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { TerminalIcon, CareerIcon, GamesIcon, ProjectsIcon, HomeIcon } from '$lib/icons';
-	import { ToggleTheme } from '$lib/components';
+	import { ConfigMenu } from '$lib/components';
+	import { t } from '$lib/translations';
 
 	let prevY: number;
 	let scrollY: number;
@@ -30,20 +31,20 @@
 		>
 		<a href="/tech" class="flex flex-row gap-2"
 			><TerminalIcon />
-			<p class="hidden md:block">Tech</p></a
+			<p class="hidden md:block">{$t('navbar.tech')}</p></a
 		>
 		<a href="/career" class="flex flex-row gap-2"
 			><CareerIcon />
-			<p class="hidden md:block">Career</p></a
+			<p class="hidden md:block">{$t('navbar.career')}</p></a
 		>
 		<a href="/projects" class="flex flex-row gap-2"
 			><ProjectsIcon />
-			<p class="hidden md:block">Projects</p></a
+			<p class="hidden md:block">{$t('navbar.projects')}</p></a
 		>
 		<a href="/games" class="flex flex-row gap-2"
 			><GamesIcon />
-			<p class="hidden md:block">Games</p></a
+			<p class="hidden md:block">{$t('navbar.games')}</p></a
 		>
-		<ToggleTheme />
+		<ConfigMenu />
 	</div>
 </div>

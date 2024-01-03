@@ -56,7 +56,11 @@
 	</script>
 </svelte:head>
 
-<button transition:fade={{ delay: 250, duration: 300 }} on:click={toggle}>
+<button
+	transition:fade={{ delay: 250, duration: 300 }}
+	on:click={toggle}
+	class="rounded-md border border-black px-2 py-1 dark:border-gray-900"
+>
 	{#if dark}
 		<SunIcon />
 	{:else}
