@@ -2,10 +2,19 @@ import i18n, { type Config } from 'sveltekit-i18n';
 
 export const defaultLocale = 'en';
 
-export const config: Config = {
+interface Fields {
+	name?: string;
+	pentium?: string;
+	jazz?: string;
+	nintendo?: string;
+	xbox?: string;
+}
+
+export const config: Config<Fields> = {
 	log: {
 		level: 'warn'
 	},
+	fallbackLocale: 'en',
 	translations: {
 		en: { en: 'English', es: 'Spanish' },
 		es: { en: 'Inglés', es: 'Español' }

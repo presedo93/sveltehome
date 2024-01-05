@@ -4,6 +4,7 @@
 	"projects": "Projects",
 	"games": "Games",
 	"config": {
+		"name": "Settings",
 		"theme": "Toggle theme",
 		"en": "English",
 		"es": "Spanish"

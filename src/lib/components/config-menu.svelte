@@ -14,7 +14,9 @@
 	};
 </script>
 
-<button use:melt={$trigger}><CogIcon /></button>
+<button use:melt={$trigger} class="flex flex-row gap-2"
+	><CogIcon /> {$t('navbar.config.name')}</button
+>
 <div use:melt={$menu} class="rounded-lg bg-gray-300 p-2 dark:bg-gray-700">
 	<div use:melt={$arrow} />
 	<div use:melt={$item} class="flex items-baseline justify-between px-2 py-1">
