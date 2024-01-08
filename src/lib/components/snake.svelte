@@ -51,7 +51,7 @@
 	<button class="mt-4 rounded-md bg-red-400 px-3" on:click={handleButton}
 		>{launched ? 'Reset the game' : 'Start the game'}</button
 	>
-	<div class=" mt-6 flex flex-col md:hidden">
+	<div class=" mt-6 flex flex-col lg:hidden">
 		<button
 			class="mb-2 self-center rounded-md bg-orange-400 px-3 py-1"
 			on:click={() => handleDir(Direction.Up)}>W</button

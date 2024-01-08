@@ -15,7 +15,8 @@
 </script>
 
 <button use:melt={$trigger} class="flex flex-row gap-2"
-	><CogIcon /> {$t('navbar.config.name')}</button
+	><CogIcon />
+	<p class="hidden lg:line-clamp-1 lg:overflow-hidden">{$t('navbar.config.name')}</p></button
 >
 <div use:melt={$menu} class="rounded-lg bg-gray-300 p-2 dark:bg-gray-700">
 	<div use:melt={$arrow} />

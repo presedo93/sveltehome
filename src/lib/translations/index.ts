@@ -8,6 +8,16 @@ interface Fields {
 	jazz?: string;
 	nintendo?: string;
 	xbox?: string;
+	vivado?: string;
+	opencv?: string;
+	pytorch?: string;
+	fastapi?: string;
+	vue?: string;
+	react?: string;
+	sveltekit?: string;
+	borrowing?: string;
+	ownership?: string;
+	dockerfiles?: string;
 }
 
 export const config: Config<Fields> = {
@@ -32,6 +42,12 @@ export const config: Config<Fields> = {
 			loader: async () => (await import('./en/home.json')).default
 		},
 		{
+			locale: 'en',
+			key: 'tech',
+			routes: ['/tech'],
+			loader: async () => (await import('./en/tech.json')).default
+		},
+		{
 			locale: 'es',
 			key: 'navbar',
 			loader: async () => (await import('./es/navbar.json')).default
@@ -41,6 +57,12 @@ export const config: Config<Fields> = {
 			key: 'home',
 			routes: ['/'],
 			loader: async () => (await import('./es/home.json')).default
+		},
+		{
+			locale: 'es',
+			key: 'tech',
+			routes: ['/tech'],
+			loader: async () => (await import('./es/tech.json')).default
 		}
 	]
 };
