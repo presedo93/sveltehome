@@ -1,4 +1,5 @@
 {
+	"title": "Tech stack",
 	"intro": "During these years, I have worked or learned as a hobby, different programming languages and/or different technological stacks. On this page I would like to tell you a little bit about them!",
 	"c++1": "C and C++ were the first two languages I learned during my undergraduate years. In the case of C it was oriented to embedded programming, using MCUs such as TM4C123x during my undergraduate years. In the work environment, I spent some time working with FPGAs of the Zynq family and implementing modules with {{ vivado }} for machine vision related applications.",
 	"c++2": "C++ was the language where I first delved into software development concepts such as memory management, software architectures or the use of algorithms. I was working with libraries like {{ opencv }} or ROS together with MQTT or RabbitMQ. Always using std and C++11 or C++14.",

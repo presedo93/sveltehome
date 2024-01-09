@@ -3,7 +3,7 @@
 </script>
 
 <div class="mx-4 flex flex-col">
-	<h1 class="mb-8 text-5xl">Techs</h1>
+	<h1 class="mb-8 text-4xl font-bold">{$t('tech.title')}</h1>
 	<p class="mb-2">
 		{$t('tech.intro')}
 	</p>
@@ -112,4 +112,5 @@
 			</p>
 		</div>
 	</div>
+	<div class="h-12" />
 </div>

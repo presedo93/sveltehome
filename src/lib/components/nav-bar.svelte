@@ -14,15 +14,15 @@
 		return dir;
 	};
 
-	$: opacity = !scrollY || deriveDir(scrollY) === 'up';
+	$: show = !scrollY || deriveDir(scrollY) === 'up';
 </script>
 
 <svelte:window bind:scrollY />
 
 <div class="sticky left-0 right-0 top-[93%] mx-5 flex justify-center">
 	<div
-		class="flex w-full items-baseline justify-around gap-4 rounded-lg border border-gray-300 bg-gray-200 p-2 transition-opacity ease-in dark:bg-gray-800 md:w-2/3"
-		class:motion-safe:opacity-0={!opacity}
+		class="flex w-full items-baseline justify-around gap-4 rounded-lg border border-gray-300 bg-gray-200 p-2 transition duration-500 ease-in dark:bg-gray-800 md:w-2/3"
+		class:motion-safe:translate-y-20={!show}
 		bind:clientHeight={height}
 	>
 		<a href="/" class="flex flex-row gap-2"
