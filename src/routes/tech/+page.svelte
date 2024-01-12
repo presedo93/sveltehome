@@ -4,7 +4,7 @@
 
 <div class="mx-4 flex flex-col">
 	<h1 class="mb-8 text-4xl font-bold">{$t('tech.title')}</h1>
-	<p class="mb-2">
+	<p class="mb-2 text-start">
 		{$t('tech.intro')}
 	</p>
 	<div class="flex flex-col items-center justify-center">

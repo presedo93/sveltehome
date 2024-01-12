@@ -18,6 +18,16 @@ interface Fields {
 	borrowing?: string;
 	ownership?: string;
 	dockerfiles?: string;
+	native?: string;
+	query?: string;
+	jotai?: string;
+	shopify?: string;
+	supabase?: string;
+	nextjs?: string;
+	streamlit?: string;
+	lightning?: string;
+	pandas?: string;
+	numpy?: string;
 }
 
 export const config: Config<Fields> = {
@@ -48,6 +58,12 @@ export const config: Config<Fields> = {
 			loader: async () => (await import('./en/tech.json')).default
 		},
 		{
+			locale: 'en',
+			key: 'projects',
+			routes: ['/projects'],
+			loader: async () => (await import('./en/projects.json')).default
+		},
+		{
 			locale: 'es',
 			key: 'navbar',
 			loader: async () => (await import('./es/navbar.json')).default
@@ -63,6 +79,12 @@ export const config: Config<Fields> = {
 			key: 'tech',
 			routes: ['/tech'],
 			loader: async () => (await import('./es/tech.json')).default
+		},
+		{
+			locale: 'es',
+			key: 'projects',
+			routes: ['/projects'],
+			loader: async () => (await import('./es/projects.json')).default
 		}
 	]
 };
