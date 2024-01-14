@@ -28,6 +28,12 @@ interface Fields {
 	lightning?: string;
 	pandas?: string;
 	numpy?: string;
+	rust?: string;
+	webassembly?: string;
+	minesweeper?: string;
+	snake?: string;
+	minerepo?: string;
+	snakerepo?: string;
 }
 
 export const config: Config<Fields> = {
@@ -64,6 +70,12 @@ export const config: Config<Fields> = {
 			loader: async () => (await import('./en/projects.json')).default
 		},
 		{
+			locale: 'en',
+			key: 'games',
+			routes: ['/games'],
+			loader: async () => (await import('./en/games.json')).default
+		},
+		{
 			locale: 'es',
 			key: 'navbar',
 			loader: async () => (await import('./es/navbar.json')).default
@@ -85,6 +97,12 @@ export const config: Config<Fields> = {
 			key: 'projects',
 			routes: ['/projects'],
 			loader: async () => (await import('./es/projects.json')).default
+		},
+		{
+			locale: 'es',
+			key: 'games',
+			routes: ['/games'],
+			loader: async () => (await import('./es/games.json')).default
 		}
 	]
 };

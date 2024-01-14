@@ -1,0 +1,9 @@
+{
+	"title": "Games",
+	"intro": "This page shows two classics as are the <code>minesweeper</code> and the <code>snake</code>. The key feature here is that they logic behind them it's done in {{ rust }} and binded with {{ sveltekit }} using {{ webassembly }}",
+	"minesweeper": "Welcome to the classic {{ minesweeper }}! Just click the cells to open them! In case you want to put a red flag to mark a box, you can do it by pressing the right click (or long press in mobile devices). The big red button does what you could imagine, it resets the board.",
+	"minesweeper2": "The game is initialized and controlled by Rust code that is bridged to the JS world using the wasm_bindgen crate. Each time the component that contais the board, is mounted, it instantiates the wasm module.",
+	"snake": "Click the launch button to start the {{ snake }} game! In this case, you need to use the <strong>AWSD</strong> keys to move the Snake and get the apples!",
+	"snake2": "For this game, the <code>HTML</code> code that renders the board is directly called from the Rust side. Same thing applies for the timer that moves the snake to the next position every 200ms.",
+	"ending": "The source code for both projects can be found clicking in the {{ minerepo }} and {{ snakerepo }} repos!"
+}
