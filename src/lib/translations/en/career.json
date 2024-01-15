@@ -1,0 +1,18 @@
+{
+	"title": "Portfolio",
+	"intro": "This page is a brief summary of my works, projects and studies. Instead of keeping an updated CV, I decided to maintain my own website. You can click at the bottom of the projects or languages sections to go to the pages with more detailed content!",
+	"work": "Works",
+	"work1": "Developing web apps and their APIs in an international team",
+	"work2": "Backend code development using C++",
+	"work3": "Artificial intelligence projects related to computer vision",
+	"work4": "Artificial vision projects in low-power systems",
+	"work5": "Bug and issue resolution in web apps",
+	"education": "Education",
+	"education1": "MSc, Electronic Systems for Intelligent Environments",
+	"education2": "BSc, Telecommunication Engineering",
+	"courses": "Courses",
+	"projects": "Proyects",
+	"languages": "languages",
+	"moreprj": "More info in {{ anchorprj }} or {{ github }}",
+	"morelang": "More info in {{ anchorlang }}"
+}

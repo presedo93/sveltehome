@@ -34,6 +34,9 @@ interface Fields {
 	snake?: string;
 	minerepo?: string;
 	snakerepo?: string;
+	anchorprj?: string;
+	anchorlang?: string;
+	github?: string;
 }
 
 export const config: Config<Fields> = {
@@ -65,6 +68,12 @@ export const config: Config<Fields> = {
 		},
 		{
 			locale: 'en',
+			key: 'career',
+			routes: ['/career'],
+			loader: async () => (await import('./en/career.json')).default
+		},
+		{
+			locale: 'en',
 			key: 'projects',
 			routes: ['/projects'],
 			loader: async () => (await import('./en/projects.json')).default
@@ -91,6 +100,12 @@ export const config: Config<Fields> = {
 			key: 'tech',
 			routes: ['/tech'],
 			loader: async () => (await import('./es/tech.json')).default
+		},
+		{
+			locale: 'es',
+			key: 'career',
+			routes: ['/career'],
+			loader: async () => (await import('./es/career.json')).default
 		},
 		{
 			locale: 'es',

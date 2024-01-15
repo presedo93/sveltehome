@@ -21,8 +21,8 @@
 
 <div class="sticky left-0 right-0 top-[93%] mx-5 flex justify-center">
 	<div
-		class="flex w-full items-baseline justify-around gap-4 rounded-lg border border-gray-300 bg-gray-200 p-2 transition duration-500 ease-in dark:bg-gray-800 md:w-2/3"
-		class:motion-safe:translate-y-20={!show}
+		class="flex w-full items-baseline justify-around gap-4 rounded-full border border-black bg-gray-200 p-2 transition duration-500 ease-in dark:border-white dark:bg-gray-900 md:w-2/3 lg:w-fit"
+		class:motion-safe:translate-y-36={!show}
 		bind:clientHeight={height}
 	>
 		<a href="/" class="flex flex-row gap-2"
