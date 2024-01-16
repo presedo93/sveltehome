@@ -3,4 +3,4 @@
 	url = https://github.com/presedo93/minesweeper.git
 [submodule "snake"]
 	path = wasm/snake
-	url = git@github.com:presedo93/snake.git
+	url = https://github.com/presedo93/snake.git

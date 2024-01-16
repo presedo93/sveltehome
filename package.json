@@ -4,14 +4,16 @@
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build",
+		"build": "scripts/build_wasm.sh && vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
-		"wasm:minesweeper": "wasm-pack build ./wasm/minesweeper/ --target web && node ./wasm/modulize.js",
-		"wasm:snake": "wasm-pack build ./wasm/snake/ --target web && node ./wasm/modulize.js"
+		"wasm": "npm run wasm:minesweeper && npm run wasm:snake && npm run wasm:modulize",
+		"wasm:minesweeper": "wasm-pack build ./wasm/minesweeper/ --target web",
+		"wasm:snake": "wasm-pack build ./wasm/snake/ --target web",
+		"wasm:modulize": "node ./wasm/modulize.js"
 	},
 	"devDependencies": {
 		"@melt-ui/pp": "^0.1.4",
